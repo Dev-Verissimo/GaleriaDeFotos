@@ -1,0 +1,47 @@
+html #wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "barraLateral galeria galeria galeria galeria galeria";
+  grid-gap: 20px;
+  overflow: hidden;
+  height: 100vh; }
+  html #wrapper #barraLateral::-webkit-scrollbar {
+    display: none; }
+  html #wrapper #barraLateral {
+    grid-area: barraLateral;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    html #wrapper #barraLateral a {
+      text-decoration: none;
+      height: 200px;
+      display: flex;
+      margin-bottom: 10px;
+      flex-direction: row; }
+      html #wrapper #barraLateral a .foto {
+        object-fit: cover; }
+  html #wrapper #galeria::-webkit-scrollbar {
+    display: none; }
+  html #wrapper #galeria {
+    grid-area: galeria;
+    overflow: scroll;
+    scroll-behavior: smooth; }
+    html #wrapper #galeria .tipo2 {
+      margin-bottom: 10px;
+      min-height: 100vh;
+      object-fit: cover; }
+
+.foto {
+  object-fit: cover;
+  filter: saturate(0);
+  transition: 0.3s ease all;
+  min-height: 25vh; }
+
+.foto:hover {
+  transform: scale(1.05);
+  filter: saturate(1); }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

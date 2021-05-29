@@ -1,0 +1,34 @@
+/*
+Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 73 of input.sass
+
+68: img 
+69:     display: block
+70:     max-width: 100%
+71: 
+72: 
+73:  @media (max-width: 851px)
+74:      #wrapper
+75:         display: grid
+76:         grid-template-rows: 1fr 5fr
+77:         grid-template-areas: "barraLateral" "galeria"
+
+Backtrace:
+input.sass:73
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:494:in `block in tabulate'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `each_with_index'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:452:in `tabulate'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:417:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:383:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:50:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:18:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 73 of input.sass\A \A 68: img \A 69:     display: block\A 70:     max-width: 100%\A 71: \A 72: \A 73:  @media (max-width: 851px)\A 74:      #wrapper\A 75:         display: grid\A 76:         grid-template-rows: 1fr 5fr\A 77:         grid-template-areas: \"barraLateral\" \"galeria\""; }
